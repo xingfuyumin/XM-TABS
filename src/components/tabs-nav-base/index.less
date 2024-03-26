@@ -1,0 +1,128 @@
+.xm-tabs-nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 34px;
+  background-color: #F3F3F5;
+  border-top: 1px solid #E3E4E5;
+}
+
+.xm-tabs-bar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  width: 0;
+  height: 100%;
+  .xm-tabs-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+.xm-tabs-oper {
+  display: flex;
+  align-items: center;
+  .xm-tabs-add, .xm-tabs-more {
+    .tant-icon-span {
+      color: #7E7F80;
+  
+    }
+  }
+  
+  .xm-tabs-split {
+    margin: 4px 0;
+    width: 1px;
+    background-color: #E3E4E5;
+    height: 26px;
+  }
+}
+
+.xm-tabs-extra {
+  margin-left: 12px;
+}
+.xm-tab {
+  background-color: #F9F9FB;
+  border-right: 1px solid #E3E4E5;
+  border-bottom: 1px solid #E3E4E5;
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  cursor: pointer;
+  padding-bottom: 4px;
+
+  .xm-tab-icon {
+    margin-right: 4px;
+  }
+
+  .xm-tab-name {
+    color: #7E7F80;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .xm-tab-oper {
+    margin-left: 8px;
+    color: #7E7F80;
+    .xm-tab-dot {
+      border-radius: 4px;
+      width: 8px;
+      height: 8px;
+      margin-top: 22px;
+      background-color: #333333;
+    }
+    .xm-tab-other {
+      display: none;
+    }
+    .xm-tab-other-show {
+      display: block;
+    }
+    &:hover {
+      .xm-tab-other {
+        display: block;
+      }
+      .xm-tab-dot {
+        display: none;
+      }
+    }
+  }
+
+  .xm-tab-close {
+    visibility: hidden;
+    &:hover {
+      cursor: pointer;
+      color: #333333;
+    }
+  }
+
+  &:hover {
+    .xm-tab-other .xm-tab-close {
+      visibility: visible;
+    }
+    .xm-tab-other-show .xm-tab-close {
+      visibility: hidden;
+    }
+
+    .xm-tab-fixed {
+      color: #333333;
+    }
+  }
+}
+.xm-tab-dragging {
+  border-right: none;
+  border-bottom: none;
+}
+
+.xm-tab-active {
+  border-bottom: none;
+  background-color: #ffffff;
+  padding-bottom: 5px;
+
+  .xm-tab-name {
+    color: #333333;
+  }
+}
+
+

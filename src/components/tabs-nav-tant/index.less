@@ -1,0 +1,56 @@
+@import url('~@tant/ui-next/lib/utils/variables.css');
+
+.xm-tabs—nav-tant {
+  background-color: var(--tant-bg-gray-color-bg2-1);
+  border-top: 1px solid var(--tant-border-color-border1-1);
+
+  .xm-tabs-oper {
+    .xm-tabs-add {
+      .tant-icon-span {
+        color: var(--tant-text-gray-color-text1-3);
+      }
+    }
+
+    .xm-tabs-split {
+      background-color: var(--tant-border-color-border1-1);
+    }
+  }
+}
+
+.xm-tab-tant.xm-tab {
+  background-color: var(--tant-fill-color-fill1-2);
+  border-right: 1px solid var(--tant-border-color-border1-1);
+  border-bottom: 1px solid var(--tant-border-color-border1-1);
+
+  .xm-tab-container {
+    color: var(--tant-text-gray-color-text1-3);
+  }
+
+  .xm-tab-oper {
+    color: var(--tant-text-gray-color-text1-3);
+  }
+  .xm-tab-close {
+    &:hover {
+      cursor: pointer;
+      color: var(--tant-text-gray-color-text1-2);
+    }
+  }
+
+  &:hover {
+    .xm-tab-fixed {
+      color: var(--tant-text-gray-color-text1-2);
+    }
+  }
+}
+
+.xm-tab-tant.xm-tab-active {
+  background-color: var(--tant-bg-white-color-bg1-1);
+
+  .xm-tab-container {
+    color: var(--tant-text-gray-color-text1-2);
+  }
+}
+.xm-tab-tant.xm-tab-dragging {
+  border-right: none;
+  border-bottom: none;
+}
